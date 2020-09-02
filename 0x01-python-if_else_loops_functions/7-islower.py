@@ -2,7 +2,7 @@
 
 def islower(c):
     numval = ord(c)
-    if numval > 97 and numval < 123:
+    if numval > 96 and numval < 123:
         return True
     else:
         return False
