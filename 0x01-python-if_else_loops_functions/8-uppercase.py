@@ -1,11 +1,15 @@
 #!/usr/bin/python3
 def uppercase(str):
-    for element in (str):
-        num = ord(element)
+    newstring = ""
+    i = 0
+    j = len(str)
+    while i < j:
+        num = ord(str[i])
         if num > 96 and num < 123:
             num = num - 32
-            element = chr(num)
-            print("{}".format(element), end='')
+            newstring += chr(num)
+            i = i + 1
         else:
-            print(element, end='')
-    print("\n")
+            newstring += chr(num)
+            i = i + 1
+    print("{}".format(newstring))
