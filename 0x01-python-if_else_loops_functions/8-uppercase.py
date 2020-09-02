@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 def uppercase(str):
     for element in (str):
-        newstring = ""
         num = ord(element)
         if num > 96 and num < 123:
-            newstring += chr(num - 32)
+            num = num - 32
+            element = chr(num)
+            print("{}".format(element), end='')
         else:
-                newstring += chr(num - 0)
-    print("{}".format(newstring))
-    print("")
+            print(element, end='')
+    print("\n")
