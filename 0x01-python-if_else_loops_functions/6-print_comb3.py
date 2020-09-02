@@ -1,4 +1,6 @@
 #!/usr/bin/python3
-a = range(0, 99)
-print(enumertae(a), end=", ")
-
+for i in range(0, 8):
+    for j in range(0, 10):
+        if j > i:
+            print("{}{}".format(i, j), end=', ')
+print("89")
