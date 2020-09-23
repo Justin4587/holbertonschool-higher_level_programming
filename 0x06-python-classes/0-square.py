@@ -1,6 +1,4 @@
 #!/usr/bin/python3
-
-
 """ letter soup kijahbsdfvoiyahbsfvoiyahbvrpiub"""
 
 
