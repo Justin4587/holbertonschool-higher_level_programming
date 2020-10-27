@@ -6,4 +6,5 @@ class Square:
     """ dsdfvbuiarv """
 
     def __init__(self, size):
-        self._square__size = size
+        """ I really do plan on figuring out what needs to go here"""
+        self.__size = size
