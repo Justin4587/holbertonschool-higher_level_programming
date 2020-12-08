@@ -1,1 +1,1 @@
-This is a README for hello world. Python
+This is a README for python hello-world.
