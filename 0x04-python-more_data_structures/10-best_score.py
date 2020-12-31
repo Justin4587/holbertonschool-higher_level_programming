@@ -4,8 +4,8 @@ def best_score(a_dictionary):
     name = None
     if a_dictionary:
         key = sorted(a_dictionary.keys())
-        for i in key:
-            if a_dictionary[i] > sum:
-                sum = a_dictionary[i] + 0
-                name = i
-    return (i)
+        for names in key:
+            if a_dictionary[names] > sum:
+                sum = a_dictionary[names] + 0
+                name = names
+    return (name)
