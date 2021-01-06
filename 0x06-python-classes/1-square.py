@@ -6,4 +6,5 @@ class Square:
     """ another one nother one """
 
     def __init__(self, size):
+        """ letter soupppspsps """
         self.__size = size
