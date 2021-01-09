@@ -1,0 +1,19 @@
+blah balah blah im making testies
+=========================
+
+this be testies
+::
+>>> add_integer = __import__("0-add_integer").add_integer
+>>> add_integer(1, 2)
+3
+
+>>> add_integer(-1)
+97
+
+>>> add_integer("asdf")
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+>>> add_integer(0, "asdf")
+Traceback (most recent call last):
+TypeError: b must be an integer
