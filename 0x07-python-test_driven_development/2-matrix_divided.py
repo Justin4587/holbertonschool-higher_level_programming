@@ -4,7 +4,7 @@
 
 def matrix_divided(matrix, div):
     """ int penetrators """
-    types = ("int", "float")
+    new_matrix = []
 
     if type(div) == float("inf"):
         raise OverflowError("cannot convert float infinity to integer")
@@ -28,6 +28,5 @@ def matrix_divided(matrix, div):
             TypeError("Each row of the matrix must have the same size")
     if not isinstance(div, (int, float)):
         raise TypeError("div must be a number")
-    for row in matrix:
-        for num in row:
-            return ("{:.2f}".format(num/div))
+    
+    return [[("{:.2f}".format(num/div)) for num in row] for row in matrix]
