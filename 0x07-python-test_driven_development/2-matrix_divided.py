@@ -29,4 +29,4 @@ def matrix_divided(matrix, div):
     if not isinstance(div, (int, float)):
         raise TypeError("div must be a number")
     
-    return [[("{:.2f}".format(num/div)) for num in row] for row in matrix]
+    return [[float("{:.2f}".format(num/div)) for num in row] for row in matrix]
