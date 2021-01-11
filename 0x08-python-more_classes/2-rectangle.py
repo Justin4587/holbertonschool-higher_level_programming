@@ -6,7 +6,7 @@ class Rectangle:
     """ This defines the not square """
 
     def __init__(self, width=0, height=0):
-        """ really getting into it now, gonna define the shit out of not square """
+        """really gettin into it now, gonna define the shit out of notsquare"""
 
         self.width = width
         self.height = height
