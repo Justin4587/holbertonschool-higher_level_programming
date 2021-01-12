@@ -52,11 +52,12 @@ class Rectangle:
     def __str__(self):
         """ mns = my not square """
         mns = ""
+        self.print_symbol = str(self.print_symbol)
         if self.__height == 0 or self.__width == 0:
             return 0
         for i in range(self.__height - 1):
-            mns += ("#" * self.__width) + "\n"
-        mns += ("#" * self.__width)
+            mns += (self.print_symbol * self.__width) + "\n"
+        mns += (self.print_symbol * self.__width)
         return mns
 
     def __repr__(self):
