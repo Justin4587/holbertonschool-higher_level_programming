@@ -53,8 +53,8 @@ class Rectangle:
         """ mns = my not square """
         mns = ""
         self.print_symbol = str(self.print_symbol)
-        if self.__height == 0 or self.__width == 0:
-            return 0
+        if self.perimeter == 0:
+            return mns
         for i in range(self.__height - 1):
             mns += (self.print_symbol * self.__width) + "\n"
         mns += (self.print_symbol * self.__width)

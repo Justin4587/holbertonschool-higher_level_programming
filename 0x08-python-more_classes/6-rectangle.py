@@ -50,7 +50,7 @@ class Rectangle:
         """ mns = my not square """
         mns = ""
         if self.__height == 0 or self.__width == 0:
-            return 0
+            return mns
         for i in range(self.__height - 1):
             mns += ("#" * self.__width) + "\n"
         mns += ("#" * self.__width)
