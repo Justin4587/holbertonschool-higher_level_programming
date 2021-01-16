@@ -22,7 +22,6 @@ def matrix_divided(matrix, div):
     items = len(matrix[0])
     for i in matrix:
         if len(i) != items:
-            print("hello")
             raise TypeError("Each row of the matrix must have the same size")
 
 
