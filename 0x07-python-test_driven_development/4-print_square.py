@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """it says print_square but ill be damned if those dont look like not squares"""
 
 
