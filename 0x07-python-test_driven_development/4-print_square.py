@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""it says print_square but ill be damned if those dont look like not squares"""
+"""says print_square but ill be damned if those dont look like not squares"""
 
 
 def print_square(size):
