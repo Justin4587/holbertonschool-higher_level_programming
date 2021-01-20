@@ -5,6 +5,6 @@
 def read_file(filename=""):
     """open and read"""
 
-    with open(filename, encoding="UTF8") as f:
+    with open("{}".format(filename), encoding="UTF8") as f:
         working_file = f.read()
         print(working_file, end="")
