@@ -3,7 +3,7 @@ import json
 """json import and rep"""
 
 
-def to_json_string(my_obj):
+def from_json_string(my_str):
     """json return rep"""
 
-    return json.dumps(my_obj)
+    return json.loads(my_str)
