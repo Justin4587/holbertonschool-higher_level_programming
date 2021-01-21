@@ -23,4 +23,6 @@ class Student:
             return self.__dict__
 
     def reload_from_json(self, json):
+        if not json:
+            return
         self.__dict__ = json
