@@ -23,7 +23,7 @@ class Base:
         """ I'm nervous about not having a doc string
         so now you can read this same line everywhere """
         if list_dictionaries is None or []:
-            return []
+            return "[]"
         return json.dumps(list_dictionaries)
 
     # @classmethod
