@@ -1,2 +1,2 @@
 -- show things
-SHOW DATABASES;
+SHOW DATABASE;
