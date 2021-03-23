@@ -3,7 +3,7 @@
 let i = 0;
 exports.logMe = function (item) {
   if (item) {
-    console.log(i + ':' + item);
+    console.log(i + ': ' + item);
     i += 1;
   }
 };
