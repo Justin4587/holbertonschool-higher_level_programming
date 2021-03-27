@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" I'm going to be mad """
 
 if __name__ == "__main__":
     from sys import argv
@@ -7,7 +8,8 @@ if __name__ == "__main__":
     db = MySQLdb.connect('localhost', argv[1],
                          argv[2], argv[3], port=3306)
     curse = db.cursor()
-    curse.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY states.id ASC")
+    curse.execute("SELECT * FROM states WHERE name LIKE 'N%'\
+                   ORDER BY states.id ASC")
     rows = curse.fetchall()
     for row in rows:
         if row[1][0] == 'N':
