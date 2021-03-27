@@ -9,7 +9,8 @@ if __name__ == "__main__":
     db = MySQLdb.connect('localhost', argv[1],
                          argv[2], argv[3], port=3306)
     curse = db.cursor()
-    curse.execute("SELECT * FROM cities ORDER BY cities.id ASC")
+    curse.execute("SELECT cities.id, cities.name, states.name\
+                   FROM cities JOIN states ORDER BY cities.id ASC")
     rows = curse.fetchall()
     for row in rows:
         print(row)
