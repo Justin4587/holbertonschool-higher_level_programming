@@ -8,6 +8,8 @@ Base = declarative_base()
 
 
 class State(Base):
+    """ I'm nervous about not having a doc string """
+
     __tablename__ = 'states'
 
     id = Column(Integer, nullable=False,
