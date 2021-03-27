@@ -15,7 +15,10 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    states = session.query(State).filter_by(name='Texas').first()
-    print("{}".format(states.id))
+    try:
+        states = session.query(State).filter_by(name='Texas').first()
+        print("{}".format(states.id))
+    except:
+        print("Not Found")
 
     session.close()
