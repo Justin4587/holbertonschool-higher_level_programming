@@ -20,6 +20,6 @@ if __name__ == "__main__":
     if states:
         print("{}".format(states.id))
     else:
-        print("Not Found")
+        print("Not found")
 
     session.close()
