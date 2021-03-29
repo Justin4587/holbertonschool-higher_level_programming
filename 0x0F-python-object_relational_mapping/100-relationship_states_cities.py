@@ -5,8 +5,8 @@ if __name__ == "__main__":
     import sqlalchemy
     from sys import argv
     from relationship_state import Base, State
-    from relationship_city import City
-    from sqlalchemy import (create_engine)
+    from relationship_city import Base, City
+    from sqlalchemy import create_engine
     from sqlalchemy.orm import sessionmaker
 
     engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'.format(
@@ -17,10 +17,9 @@ if __name__ == "__main__":
     session = Session()
 
     add_s = State(name="California")
-    add_c = City(name="San Francisco")
-    add_s.cities.append(add_c)
+    add_s.cities = [City(name="San Francisco")]
+
     session.add(add_s)
-    session.add(add_c)
 
     session.commit()
 
