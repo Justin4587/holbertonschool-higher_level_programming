@@ -16,7 +16,7 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    all = session.query(State).order_by(State.id).all()
+    all = session.query(City).order_by(City.id).all()
 
     for row in all:
         print("{}: {} -> {}".format(row.id, row.name, row.state.name))
