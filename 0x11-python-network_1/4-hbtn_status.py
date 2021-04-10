@@ -2,7 +2,7 @@
 """ I'm going to put a comment here"""
 
 if __name__ == "__main__":
-    from urllib import requests
+    import requests
 
     resp = requests.get("https://intranet.hbtn.io/status")
     response = resp.text
