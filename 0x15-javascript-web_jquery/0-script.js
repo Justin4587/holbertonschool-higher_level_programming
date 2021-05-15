@@ -1,4 +1,2 @@
-#!/usr/bin/node
-
-const hdrclr = document.querySelector('header');
-hdrclr.style.color = '#FF0000';
+// this is the best comment ever X 10
+document.querySelector('header').style = 'color: #FF0000;';
