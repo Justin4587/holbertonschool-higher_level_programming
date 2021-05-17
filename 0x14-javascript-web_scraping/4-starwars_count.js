@@ -1,7 +1,7 @@
 #!/usr/bin/node
 
 const request = require('request');
-const thewars = process.argv[2]
+const thewars = process.argv[2];
 
 request(thewars, function (err, res, body) {
   if (err) {
